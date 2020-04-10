@@ -20,12 +20,12 @@ function App() {
     try {
 
       const repo = {
-        url: "https://github.com/Rocketseat/umbriel",
+        url: "https://github.com/ruiblaese/gostack-desafio-reactjs-conceitos",
         title: "Desafio ReactJS",
-        techs: ["Node", "Express", "TypeScript"]
+        techs: ["JS", "React"]
       };
 
-      const response = await api.post(`repositories/`, repo);
+      const response = await api.post(`repositories`, repo);
 
       setRepositories([...repositories, response.data]);
 
